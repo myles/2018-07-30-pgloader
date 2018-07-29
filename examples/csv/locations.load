@@ -1,0 +1,45 @@
+LOAD CSV
+  FROM locations.csv
+  HAVING FIELDS
+    (
+      type_code,      -- Location Type Code
+      type_desc,      -- Location Type Description
+      code,           -- Location Code
+      description,    -- Location Description
+      name,           -- Location Name
+      address,        -- Address
+      phone,          -- Phone
+      notes,          -- Notes
+      latitude,       -- Latitude
+      longitude       -- Longitude
+    )
+
+  INTO postgresql:///to_open_data
+  TARGET TABLE locations
+  TARGET COLUMNS
+    (
+      type_code, type_desc, code, description, name, address, phone,
+      location point using (format nil "(~a,~a)" longitude latitude)
+    )
+
+  WITH truncate,
+    disable triggers,
+    skip header = 1,
+    batch rows = 200,
+    batch size = 1024 kB,
+    batch concurrency = 3,
+    fields terminated by ','
+
+  BEFORE LOAD DO
+    $$ DROP TABLE IF EXISTS locations; $$,
+    $$ CREATE TABLE locations (
+      type_code     TEXT,
+      type_desc     TEXT,
+      code          TEXT,
+      description   TEXT,
+      name          TEXT,
+      address       TEXT,
+      phone         TEXT,
+      location      POINT
+    );
+    $$;
