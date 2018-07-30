@@ -1,8 +1,28 @@
 # [fit] pgloader
 
-# Load whatever into Postgres
+# Migrate things into Postgres good
 
 ^ Hi, I'm Myles Braithwaite and tonight I'm going to be talking about pgloader a Postgres utility to loading data from files or migrating a whole database to Postgres.
+
+---
+
+# I'm not a
+# [fit] DBA
+
+![](photos/tobias-fischer-185901-unsplash.jpg)
+
+^ Just so you know, I'm not a DBA.
+
+---
+
+# I'm a
+# [fit] Programmer &
+# [fit] Data Scientist
+
+![](photos/jefferson-santos-450403-unsplash.jpg)
+![](photos/rawpixel-656709-unsplash.jpg)
+
+^ I'm a programmer and data scientist.
 
 ---
 
@@ -87,9 +107,7 @@ pgloader
                               Create tables          0         72                     0.177s
                              Set Table OIDs          0         36                     0.008s
 -------------------------------------------  ---------  ---------  ---------  --------------
-                       grantmatch.companies          0         11     1.7 kB          0.038s
-                       grantmatch.documents          0        455    69.0 kB          0.087s
-                       grantmatch.favourites         0         80     1.2 kB          0.125s
+                          grantmatch.table           0     528034   634.0 MB        1m1.043s
 -------------------------------------------  ---------  ---------  ---------  --------------
                     COPY Threads Completion          0          4                    45.583s
                              Create Indexes          0         97                    12.099s
@@ -193,18 +211,21 @@ LOAD CSV
 
 ---
 
-![fit](photos/jupyter-notebook.png)
+![inline fill](photos/jupyter-notebook.png)
 
 <https://git.io/fNauY>
 
 ---
 
-# Credits
+# [fit] Myles Braithwaite
 
--   [Talia Cohen](https://unsplash.com/photos/i5FsBOLsB50)
--   [AJ Robbie](https://unsplash.com/photos/BuQ1RZckYW4)
--   [FuYong Hua](https://unsplash.com/photos/tEMU4lzAL0w)
--   [Adam Jang](https://unsplash.com/photos/8pOTAtyd_Mc)
--   [George Pagan III](https://unsplash.com/photos/PsifAN6_z-k)
--   [Jeroen Wehkamp](https://unsplash.com/photos/UzRUVbXVxVM)
--   [Markus Spiske](https://unsplash.com/photos/xekxE_VR0Ec)
+-   🌎 [mylesb.ca](https://mylesb.ca/)
+-   📬 [me@mylesb.ca](mailto:me@mylesb.ca)
+-   🐦 [twitter.com/mylesb](https://twitter.com/mylesb)
+-   👔 [linkedin.com/in/mylesbraithwaite](https://linkedin.com/in/mylesbraithwaite)
+
+---
+
+# Photo Credits
+
+[Tobias Fischer](https://unsplash.com/photos/PkbZahEG2Ng), [Jefferson Santos](https://unsplash.com/photos/9SoCnyQmkzI), [rawpixel](https://unsplash.com/photos/8dHheu02i8s), [Talia Cohen](https://unsplash.com/photos/i5FsBOLsB50), [AJ Robbie](https://unsplash.com/photos/BuQ1RZckYW4), [FuYong Hua](https://unsplash.com/photos/tEMU4lzAL0w), [Adam Jang](https://unsplash.com/photos/8pOTAtyd_Mc), [George Pagan III](https://unsplash.com/photos/PsifAN6_z-k), [Jeroen Wehkamp](https://unsplash.com/photos/UzRUVbXVxVM), and [Markus Spiske](https://unsplash.com/photos/xekxE_VR0Ec).
