@@ -189,6 +189,8 @@ LOAD CSV
     $$;
 ```
 
+<https://git.io/fNaue>
+
 ---
 
 ![fit](photos/jupyter-notebook.png)
