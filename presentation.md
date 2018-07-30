@@ -195,6 +195,8 @@ LOAD CSV
 
 ![fit](photos/jupyter-notebook.png)
 
+<https://git.io/fNauY>
+
 ---
 
 # Credits
