@@ -226,6 +226,14 @@ LOAD CSV
 
 ---
 
+![left](photos/MasteringPostgreSQLinAppDev-Cover.png)
+
+15% off electronic media using code `toronto-pug`
+
+<https://masteringpostgresql.com/>
+
+---
+
 # Photo Credits
 
 [Tobias Fischer](https://unsplash.com/photos/PkbZahEG2Ng), [Jefferson Santos](https://unsplash.com/photos/9SoCnyQmkzI), [rawpixel](https://unsplash.com/photos/8dHheu02i8s), [Talia Cohen](https://unsplash.com/photos/i5FsBOLsB50), [AJ Robbie](https://unsplash.com/photos/BuQ1RZckYW4), [FuYong Hua](https://unsplash.com/photos/tEMU4lzAL0w), [Adam Jang](https://unsplash.com/photos/8pOTAtyd_Mc), [George Pagan III](https://unsplash.com/photos/PsifAN6_z-k), [Jeroen Wehkamp](https://unsplash.com/photos/UzRUVbXVxVM), and [Markus Spiske](https://unsplash.com/photos/xekxE_VR0Ec).
